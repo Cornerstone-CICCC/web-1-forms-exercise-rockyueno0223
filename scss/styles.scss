@@ -12,3 +12,17 @@ form {
   max-width: 600px;
   margin: 20px auto;
 }
+
+input{
+  height: 1.25rem;
+  border-radius: 5px;
+  border: 2px solid lightgray;
+}
+
+input[type='radio']{
+  height: 0.75rem;
+}
+
+textarea{
+  width: 100%;
+}

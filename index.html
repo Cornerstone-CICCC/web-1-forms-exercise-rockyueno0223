@@ -9,6 +9,73 @@
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
         <!-- FORM FIELDS HERE -->
+         <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" minlength="12"><br>
+            <label for="datetime">Date of Birth:</label><br>
+            <input type="datetime-local" name="datetime" id="datetime">
+         </fieldset>
+
+         <fieldset>
+            <legend>Preferences</legend>
+            <label for="color">Favorite Color:</label><br>
+            <input type="color" name="color" id="color"><br>
+            <label for="hobby">Hobby:</label><br>
+            <input type="text" name="hobby" id="hobby"><br>
+            <datalist id="hobby">
+                <option value="Drawing"></option>
+                <option value="Swimming"></option>
+                <option value="Dancing"></option>
+            </datalist>
+            <label for="experience">Experience Level:</label><br>
+            <input type="range" name="experience" id="experience">
+         </fieldset>
+
+         <fieldset>
+            <legend>Contact Preferences</legend>
+            <label for="contactmethod">Preferred Contact Method:</label><br>
+            <select name="contactmethod" id="contactmethod">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="mail">Mail</option>
+            </select><br>
+            <label for="subscribe">Subscribe to Newsletter:</label><br>
+            <input type="checkbox" name="subscribe" id="subscribe">
+         </fieldset>
+
+         <fieldset>
+            <legend>Preferences</legend>
+            <label for="">Gender:</label><br>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label><br>
+            <input type="radio" name="gender" value="other" id="other">
+            <label for="other">Other</label><br>
+         </fieldset>
+
+         <fieldset>
+            <legend>More Information</legend>
+            <label for="info">Bio:</label><br>
+            <textarea name="info" id="info"></textarea>
+         </fieldset>
+
+         <fieldset>
+            <legend>Uploading Documents</legend>
+            <label for="document">Resume and other certificates:</label><br>
+            <input type="file" name="document" id="document" accept=".doc, .dox, .pdf, .jpg, .png">
+         </fieldset>
+
+         <fieldset>
+            <legend>Submission</legend>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+         </fieldset>
     </form>
 </body>
 </html>
